@@ -40,6 +40,15 @@ Create a new file named .prettierrc in the root of your project and configure Pr
     coverage
 
 # 5 Add lint and format scripts to package.json:
+Open your package.json file and add the following scripts:
+
+    "lint": "eslint .",
+    "lint-and-fix": "eslint . --ext .ts --fix",
+
+# 6 Run lint and format:
+Now you can run the linting and formatting checks on your CDK project:
+
+    npm run lint
+    npm run lint-and-fix
 
 
-# 6 
